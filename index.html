@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Essentials -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Index tag in meta section -->
+  <meta name="robots" content="index, follow" />
+  <meta name="index" content="yes" />
+
+  <!-- SEO -->
+  <title>Mini Goldendoodles: A Complete Guide</title>
+  <meta name="description" content="A beautifully designed, comprehensive guide to Mini Goldendoodles — origins, traits, care, training, health, adoption, and more." />
+  <meta name="keywords" content="Mini Goldendoodle, Goldendoodle puppies, doodle breeds, dog care, hypoallergenic dogs" />
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg: #0b0f14;
+      --panel: #11161d;
+      --panel-2: #141a22;
+      --text: #eaf0f7;
+      --muted: #b8c1cc;
+      --primary: #7c4dff;
+      --primary-2: #9b6bff;
+      --accent: #2dd4bf;
+      --accent-2: #22c55e;
+      --border: #263242;
+      --gradient: radial-gradient(1200px 600px at 10% 0%, rgba(124,77,255,0.25) 0%, rgba(13,17,23,0) 45%), radial-gradient(1000px 400px at 90% 10%, rgba(34,197,94,0.2) 0%, rgba(13,17,23,0) 50%);
+    }
+
+    /* Reset & Base */
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); }
+    body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, sans-serif; line-height: 1.7; }
+
+    /* Layout */
+    .wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+    .section { padding: 72px 0; position: relative; }
+    .panel { background: linear-gradient(180deg, var(--panel), var(--panel-2)); border: 1px solid var(--border); border-radius: 20px; box-shadow: 0 30px 60px rgba(0,0,0,0.35); overflow: hidden; }
+    .panel-inner { padding: 36px 32px; }
+    .grid { display: grid; gap: 24px; }
+    .grid-2 { grid-template-columns: 1.15fr 1fr; }
+    .grid-3 { grid-template-columns: repeat(3, 1fr); }
+    @media (max-width: 960px){
+      .grid-2, .grid-3 { grid-template-columns: 1fr; }
+    }
+
+    /* Hero */
+    .hero {
+      padding: 110px 0 70px;
+      background: var(--gradient);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero .badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 8px 14px; border: 1px solid var(--border);
+      border-radius: 999px; background: rgba(17,22,29,0.6);
+      color: var(--muted); font-weight: 500; backdrop-filter: blur(8px);
+    }
+    .hero h1 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(38px, 7vw, 68px);
+      line-height: 1.05; margin: 16px 0 18px;
+      letter-spacing: 0.2px;
+      background: linear-gradient(180deg, #fff, #cfe0ff);
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+    }
+    .hero p { max-width: 780px; color: var(--muted); font-size: 18px; }
+    .cta-row { display: flex; gap: 14px; margin-top: 24px; flex-wrap: wrap; }
+    .btn {
+      appearance: none; border: none; cursor: pointer;
+      font-weight: 700; letter-spacing: 0.2px;
+      padding: 14px 18px; border-radius: 12px; transition: all .2s ease;
+    }
+    .btn-primary { background: linear-gradient(90deg, var(--primary), var(--primary-2)); color: #fff; box-shadow: 0 12px 28px rgba(124,77,255,0.3); }
+    .btn-primary:hover { transform: translateY(-1px); box-shadow: 0 16px 34px rgba(124,77,255,0.4); }
+    .btn-ghost { background: rgba(255,255,255,0.06); color: var(--text); border: 1px solid var(--border); }
+    .btn-ghost:hover { background: rgba(255,255,255,0.1); transform: translateY(-1px); }
+
+    /* Headings */
+    h2 { font-size: clamp(26px, 4vw, 34px); margin: 0 0 12px; font-weight: 800; letter-spacing: 0.2px; }
+    h3 { font-size: 22px; margin: 10px 0 8px; font-weight: 700; }
+    .sub { color: var(--muted); margin-bottom: 22px; }
+
+    /* Cards */
+    .card {
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: linear-gradient(180deg, #141a22, #10161e);
+      padding: 22px;
+      box-shadow: 0 18px 40px rgba(0,0,0,0.28);
+    }
+    .card h3 { margin-top: 0; }
+    .chip {
+      display:inline-block; padding:6px 10px; border-radius:999px;
+      background: rgba(124,77,255,0.14); border:1px solid rgba(124,77,255,0.3);
+      color:#dfd8ff; font-size:12px; font-weight:700; letter-spacing:0.25px;
+    }
+
+    /* Feature list */
+    .list { display: grid; gap: 10px; }
+    .list-item { display: grid; grid-template-columns: 24px auto; gap: 12px; align-items: start; }
+    .icon {
+      width: 24px; height: 24px; border-radius: 8px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      box-shadow: 0 10px 20px rgba(34,197,94,0.25);
+    }
+
+    /* Table */
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      background: #121821;
+    }
+    .table th, .table td {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--border);
+      text-align: left;
+    }
+    .table th { color: #dfe8f3; font-weight: 700; background: #11161d; }
+    .table tr:hover td { background: rgba(124,77,255,0.08); }
+
+    /* Callout */
+    .callout {
+      margin-top: 16px;
+      padding: 18px 20px;
+      border: 1px dashed rgba(124,77,255,0.4);
+      border-radius: 14px;
+      background: rgba(124,77,255,0.12);
+      color: #e7e1ff;
+    }
+
+    /* Footer */
+    footer { padding: 40px 0 60px; color: var(--muted); text-align: center; }
+    footer a { color: var(--accent); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    /* Smooth scroll */
+    html { scroll-behavior: smooth; }
+
+    /* Utility */
+    .muted { color: var(--muted); }
+    .divider { height: 1px; background: var(--border); margin: 20px 0; opacity: .8; }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="wrap" aria-label="Primary navigation" style="padding:16px 0;">
+    <nav class="panel" style="padding: 8px 14px; display:flex; align-items:center; justify-content:space-between;">
+      <div style="display:flex; align-items:center; gap:10px;">
+        <span class="icon" aria-hidden="true"></span>
+        <strong style="font-weight:800; letter-spacing:0.3px;">Doodle Guide</strong>
+      </div>
+      <div style="display:flex; gap:8px; flex-wrap:wrap;">
+        <a class="btn btn-ghost" href="#intro">Intro</a>
+        <a class="btn btn-ghost" href="#origins">Origins</a>
+        <a class="btn btn-ghost" href="#traits">Traits</a>
+        <a class="btn btn-ghost" href="#care">Care</a>
+        <a class="btn btn-ghost" href="#training">Training</a>
+        <a class="btn btn-ghost" href="#health">Health</a>
+        <a class="btn btn-ghost" href="#adoption">Adoption</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap">
+      <span class="badge">Comprehensive Guide • Mini Goldendoodles</span>
+      <h1>Mini Goldendoodles: A Complete Guide</h1>
+      <p>
+        Discover everything you need to know about Mini Goldendoodles—origins, traits, grooming, training, health, and adoption.
+        This guide is crafted for clarity, depth, and a truly premium reading experience.
+      </p>
+      <div class="cta-row">
+        <a href="https://thedoodletribe.com/" class="btn btn-primary">The Doodle Tribe</a>
+        <a href="https://en.wikipedia.org/wiki/Dog_crossbreed" class="btn btn-ghost">Quick Facts</a>
+      </div>
+    </div>
+  </section>
+
+  <main class="wrap">
+    <!-- Quick Facts -->
+    <section id="quick-facts" class="section">
+      <div class="panel">
+        <div class="panel-inner grid grid-3">
+          <div class="card">
+            <h3>What they are</h3>
+            <p class="muted">A cross between a Golden Retriever and a Miniature or Toy Poodle, designed for a smaller size, intelligence, and low-shedding coats.</p>
+            <span class="chip">Designer Hybrid</span>
+          </div>
+          <div class="card">
+            <h3>Typical size & lifespan</h3>
+            <p class="muted">Height 13–20 inches • Weight 15–35 lbs • Lifespan 12–16 years, depending on genetics and care quality.</p>
+            <span class="chip">Compact & Long-Lived</span>
+          </div>
+          <div class="card">
+            <h3>Core traits</h3>
+            <p class="muted">Affectionate, social, trainable, playful; well-suited to families and first-time dog owners willing to invest in grooming and activity.</p>
+            <span class="chip">Family-Friendly</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Introduction -->
+    <section id="intro" class="section">
+      <div class="panel">
+        <div class="panel-inner">
+          <h2>Introduction</h2>
+          <p class="sub">An overview of Mini Goldendoodles and what makes them such beloved companions.</p>
+          <p>
+            Mini Goldendoodles are among the most sought-after designer dogs, blending the gentle, people-focused nature of the Golden Retriever
+            with the intelligence and low-shedding coat of the Miniature or Toy Poodle. Their compact size increases their suitability for apartments
+            and urban living, yet they retain the energy and enthusiasm that make outdoor activities and training sessions rewarding.
+            This guide dives into their origin, physical traits, personality, care, training, health, and adoption considerations so you can decide
+            whether a Mini Goldendoodle is the right fit for your lifestyle.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Origins & History -->
+    <section id="origins" class="section">
+      <div class="panel">
+        <div class="panel-inner grid grid-2">
+          <div>
+            <h2>Origins and history</h2>
+            <p class="sub">How the Mini Goldendoodle came to be and the strengths of each parent breed.</p>
+            <h3>The Golden Retriever</h3>
+            <p>
+              Golden Retrievers are beloved for their friendly disposition, patience, and loyalty. Historically bred for retrieving game,
+              they excel at tasks requiring focus and cooperation. Their hallmark is a warm, people-centered temperament, making them ideal
+              family companions and therapy dogs.
+            </p>
+            <h3>The Miniature/Toy Poodle</h3>
+            <p>
+              Poodles are renowned for intelligence, trainability, and hypoallergenic coats. Miniature and Toy varieties bring those strengths
+              in a smaller package, adding adaptability and reduced shedding to the hybrid. They are alert, agile, and eager to learn—traits that
+              shine in a Mini Goldendoodle’s everyday life.                               <a href="https://medium.com/the-daily-cuppa/3-%C2%BD-big-lessons-from-3-%C2%BD-years-of-puppy-parenting-f620d63679d8" class="btn btn-ghost">Quick Guide</a>
+            </p>
+            <h3>The rise of the Mini Goldendoodle</h3>
+            <p>
+              The broader Goldendoodle trend gained traction in the 1990s, with demand eventually shifting to smaller companion dogs suitable for
+              diverse living spaces. Breeders paired Golden Retrievers with Miniature or Toy Poodles to create the Mini Goldendoodle—a dog that
+              offers the “best of both worlds” in a compact, family-friendly size.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Origin highlights</h3>
+            <div class="list">
+              <div class="list-item">
+                <span class="icon" aria-hidden="true"></span>
+                <div><strong>Balanced temperament:</strong> Goldens add gentleness and sociability; Poodles add smarts and structure.</div>
+              </div>
+              <div class="list-item">
+                <span class="icon" aria-hidden="true"></span>
+                <div><strong>Urban-friendly size:</strong> Smaller stature unlocks apartment living without sacrificing personality.</div>
+              </div>
+              <div class="list-item">
+                <span class="icon" aria-hidden="true"></span>
+                <div><strong>Low-shedding potential:</strong> Curlier coats are typically better for allergy-prone households.</div>
+              </div>
+              <div class="list-item">
+                <span class="icon" aria-hidden="true"></span>
+                <div><strong>Activity-ready:</strong> Energetic, playful, and well-suited to training and outdoor fun.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Physical Traits -->
+    <section id="traits" class="section">
+      <div class="panel">
+        <div class="panel-inner">
+          <h2>Physical characteristics</h2>
+          <p class="sub">Size, coat types, colors, and what to expect as they grow.</p>
+          <div class="grid grid-3">
+            <div class="card">
+              <h3>Size & weight</h3>
+              <p>
+                Mini Goldendoodles typically stand 13–20 inches at the shoulder and weigh 15–35 pounds, depending on lineage and diet.
+                They are compact enough for city living yet sturdy enough for active play and light adventures.
+              </p>
+            </div>
+            <div class="card">
+              <h3>Coat types</h3>
+              <p>
+                Coats range from straight to wavy to curly. Curlier coats generally shed less and may be more suitable for allergy-prone owners.
+                Texture and density vary—regular grooming helps maintain softness and prevent matting.
+              </p>
+            </div>
+            <div class="card">
+              <h3>Colors & patterns</h3>
+              <p>
+                Common colors include cream, apricot, red, chocolate, black, and parti-color patterns. Their “teddy bear” look—fluffy cheeks and
+                expressive eyes—adds to their universal appeal.
+              </p>
+            </div>
+          </div>
+          <div class="callout">
+            Tip: Coat type is influenced by genetics. Ask breeders which parent carries curlier coat genes if low shedding is a priority.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Temperament -->
+    <section id="temperament" class="section">
+      <div class="panel">
+        <div class="panel-inner grid grid-2">
+          <div>
+            <h2>Temperament and personality</h2>
+            <p class="sub">Why Mini Goldendoodles fit so naturally into family life.</p>
+            <p>
+              Mini Goldendoodles are affectionate, gentle, and people-focused. They bond closely with family members and often thrive in homes
+              where someone is present most of the day. Their combination of Retriever warmth and Poodle intelligence creates a playful,
+              trainable companion that responds well to positive reinforcement.
+            </p>
+            <p>
+              Most are naturally social with children and other pets when properly socialized. They enjoy interactive games, structured routines,
+              and calm, consistent guidance. Occasional “goofy” antics are part of the charm—expect cheerful greetings and a keen desire to participate
+              in whatever the family is doing.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Personality snapshot</h3>
+            <div class="list">
+              <div class="list-item"><span class="icon"></span><div><strong>Affectionate:</strong> Loyal, cuddly, and eager to please.</div></div>
+              <div class="list-item"><span class="icon"></span><div><strong>Intelligent:</strong> Quick learners that enjoy mental challenges.</div></div>
+              <div class="list-item"><span class="icon"></span><div><strong>Playful:</strong> Loves games, fetch, and light agility.</div></div>
+              <div class="list-item"><span class="icon"></span><div><strong>Adaptable:</strong> Suitable for apartments and houses alike.</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Care Requirements -->
+    <section id="care" class="section">
+      <div class="panel">
+        <div class="panel-inner">
+          <h2>Care requirements</h2>
+          <p class="sub">Grooming, exercise, and nutrition essentials to keep them thriving.</p>
+
+          <h3>Grooming</h3>
+          <p>
+            Brush 3–4 times per week to prevent mats, especially with wavy/curly coats. Plan for professional grooming every 6–8 weeks to trim,
+            bathe, and maintain hygiene. Keep nails short, clean ears weekly, and brush teeth several times a week for good oral health.
+          </p>
+
+          <h3>Exercise</h3>
+          <p>
+            Aim for 45–75 minutes of daily activity combining walks, fetch, and short training games. Many enjoy swimming and beginner agility.
+            Mental stimulation is as important as physical—rotate puzzle toys, nose-work games, and basic obedience refreshers.
+          </p>
+
+          <h3>Nutrition</h3>
+          <p>
+            Feed a high-quality, balanced dog food appropriate for size and life stage (puppy, adult, senior). Monitor portions to avoid excess weight.
+            Discuss with your vet whether omega-3 fatty acids (for skin/coat) or joint-support supplements are appropriate for your individual dog.
+          </p>
+
+          <div class="divider"></div>
+
+          <table class="table" aria-label="Recommended care cadence">
+            <thead>
+              <tr>
+                <th>Care area</th>
+                <th>Frequency</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Brushing</td>
+                <td>3–4× weekly</td>
+                <td>Detangle wavy/curly coats; use a slicker brush + metal comb.</td>
+              </tr>
+              <tr>
+                <td>Professional grooming</td>
+                <td>6–8 weeks</td>
+                <td>Trim coat, nails, sanitary areas; ear cleaning.</td>
+              </tr>
+              <tr>
+                <td>Exercise</td>
+                <td>Daily</td>
+                <td>Mix walks, fetch, short training, and puzzle play.</td>
+              </tr>
+              <tr>
+                <td>Dental care</td>
+                <td>3–5× weekly</td>
+                <td>Dog-safe toothpaste; consider dental chews as adjuncts.</td>
+              </tr>
+              <tr>
+                <td>Vet wellness check</td>
+                <td>Annually</td>
+                <td>Vaccinations, parasite prevention, baseline labs as needed.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Training -->
+    <section id="training" class="section">
+      <div class="panel">
+        <div class="panel-inner grid grid-2">
+          <div>
+            <h2>Training Mini Goldendoodles</h2>
+            <p class="sub">Positive, consistent methods that match their intelligence and sensitivity.</p>
+            <p>
+              Start socialization early—exposure to varied people, places, sounds, and gentle handling builds confidence.
+              Focus on positive reinforcement: reward desired behavior with treats, praise, or play. Keep sessions short (5–10 minutes),
+              especially for puppies, and end on a success. Establish routines for house training and crate comfort, using calm guidance and consistency.
+            </p>
+            <p>
+              As they mature, add complexity: cue discrimination, impulse control games, and beginner agility. Many excel in therapy or emotional
+              support roles thanks to their sociability and responsiveness. Avoid harsh corrections; these can erode trust and hinder progress.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Core training goals</h3>
+            <div class="list">
+              <div class="list-item"><span class="icon"></span><div><strong>Socialization:</strong> Calm exposure to new stimuli from 8–16 weeks.</div></div>
+              <div class="list-item"><span class="icon"></span><div><strong>House training:</strong> Consistent schedule; reward outdoor elimination.</div></div>
+              <div class="list-item"><span class="icon"></span><div><strong>Basic cues:</strong> Sit, Down, Come, Stay, Leave it, Heel.</div></div>
+              <div class="list-item"><span class="icon"></span><div><strong>Handling:</strong> Cooperative care—brushing, nail trims, vet exams.</div></div>
+            </div>
+            <div class="callout">Keep sessions upbeat and brief; end with a game or favorite reward to build enthusiasm.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Health -->
+    <section id="health" class="section">
+      <div class="panel">
+        <div class="panel-inner">
+          <h2>Health considerations</h2>
+          <p class="sub">Common issues, prevention, and proactive wellness.</p>
+          <p>
+            Like all breeds, Mini Goldendoodles may inherit health risks from their parent breeds. Common concerns include hip or elbow dysplasia,
+            progressive retinal atrophy (PRA), certain heart conditions, and skin sensitivities. While hybrid vigor can mitigate some risk,
+            the best protection is responsible breeding and regular veterinary care.
+          </p>
+          <p>
+            Choose breeders who perform genetic testing and provide clear health records. Maintain a schedule of vaccinations, parasite prevention,
+            dental care, and annual wellness exams. Monitor weight, joint comfort, and skin/coat quality—early intervention keeps small issues
+            from becoming large ones.
+          </p>
+          <div class="grid grid-3" style="margin-top: 10px;">
+            <div class="card">
+              <h3>Preventive care</h3>
+              <p>Annual exams, core vaccines, fecal checks, heartworm tests, and tailored parasite control based on your region.</p>
+            </div>
+            <div class="card">
+              <h3>Lifestyle impact</h3>
+              <p>Balanced diet, steady exercise, and mental enrichment support joint health, weight management, and emotional well-being.</p>
+            </div>
+            <div class="card">
+              <h3>Breeder screening</h3>
+              <p>Ask about OFA hips/elbows, eye certifications, and DNA tests relevant to Golden Retrievers and Poodles.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Living Needs -->
+    <section id="living" class="section">
+      <div class="panel">
+        <div class="panel-inner grid grid-2">
+          <div>
+            <h2>Living needs</h2>
+            <p class="sub">Home environments, climate considerations, and daily routines.</p>
+            <p>
+              Mini Goldendoodles adapt well to apartments and houses. They value companionship and may be prone to separation stress if left alone for
+              long hours. Create predictable routines—morning walks, midday enrichment, and evening calm—to help them settle into your lifestyle.
+            </p>
+            <p>
+              In warmer climates, manage heat with shade, cool water, and mid-day rest. In cooler seasons, their coats offer modest insulation,
+              but young or senior dogs may still benefit from short outdoor sessions and cozy indoor spaces.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Daily rhythm example</h3>
+            <ul class="list" style="list-style:none; padding:0; margin:0;">
+              <li class="list-item"><span class="icon"></span><div><strong>Morning:</strong> 20–30 min walk + 5 min training.</div></li>
+              <li class="list-item"><span class="icon"></span><div><strong>Midday:</strong> Puzzle toy or nose-work game; brief potty break.</div></li>
+              <li class="list-item"><span class="icon"></span><div><strong>Afternoon:</strong> Fetch or short agility practice.</div></li>
+              <li class="list-item"><span class="icon"></span><div><strong>Evening:</strong> Calm decompression, brushing, cuddle time.</div></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Adoption & Buying -->
+    <section id="adoption" class="section">
+      <div class="panel">
+        <div class="panel-inner">
+          <h2>Adoption and buying</h2>
+          <p class="sub">Finding ethical breeders and exploring rescue options.</p>
+
+          <h3>Choosing a reputable breeder</h3>
+          <p>
+            Look for transparency: health clearances, genetic testing, and open communication. Visit facilities (in person or virtually), meet parent dogs,
+            and review socialization practices. Ethical breeders provide vaccination records, care guidelines, and a clear contract.
+          </p>
+
+          <h3>Exploring rescue</h3>
+          <p>
+            Consider adopting through breed-focused rescues or local shelters. Rescues often evaluate temperament and provide initial medical care,
+            helping you match with a dog that fits your household and experience level.
+          </p>
+
+          <h3>Typical cost</h3>
+          <p>
+            Prices for Mini Goldendoodle puppies commonly range from $2,000 to $4,000, varying by coat type, size predictions, location, and breeder reputation.
+            Factor in ongoing costs—grooming, food, vet care, training classes, and enrichment supplies—when budgeting.
+          </p>
+
+          <div class="callout">
+            Ask for a “puppy starter kit” with feeding schedules, grooming guidance, and training tips to smooth the first weeks at home.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose -->
+    <section id="why" class="section">
+      <div class="panel">
+        <div class="panel-inner grid grid-2">
+          <div>
+            <h2>Why choose a Mini Goldendoodle?</h2>
+            <p class="sub">A compelling blend of personality, smarts, and size.</p>
+            <p>
+              Mini Goldendoodles bring together warmth, intelligence, and manageable size. They fit effortlessly into many lifestyles,
+              provided their grooming and exercise needs are met. For families, singles, and seniors, they deliver companionship, playfulness,
+              and a trainable nature that rewards gentle, consistent guidance.
+            </p>
+            <p>
+              If you value a sociable, low-shedding, and highly teachable companion, a Mini Goldendoodle can be a joy for years to come.
+              Invest in care and quality time, and you’ll be repaid with loyalty and lighthearted fun day after day.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Top reasons people love them</h3>
+            <div class="list">
+              <div class="list-item"><span class="icon"></span><div><strong>Affectionate:</strong> Bonds closely with household members.</div></div>
+              <div class="list-item"><span class="icon"></span><div><strong>Trainable:</strong> Responds well to positive reinforcement.</div></div>
+              <div class="list-item"><span class="icon"></span><div><strong>Adaptable:</strong> Apartment-friendly yet adventure-ready.</div></div>
+              <div class="list-item"><span class="icon"></span><div><strong>Low-shedding:</strong> Curlier coats may suit allergy-prone owners.</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="wrap">
+        <p>&copy; 2025 Mini Doodle Knowledge — All rights reserved.</p>
+        <p>
+          Built for clarity and comfort. Have feedback? <a href="#intro">Scroll to top</a> and explore more sections.
+        </p>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
